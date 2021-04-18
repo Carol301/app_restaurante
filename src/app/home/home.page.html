@@ -1,0 +1,95 @@
+<ion-header [translucent]="true">
+  
+  <ion-toolbar color="light" > 
+    <ion-button style="margin-left: 15px;" color="light" (click)="abrirMenu()"><ion-icon name="menu"></ion-icon></ion-button> 
+   <!--  <ion-title class="centro" style="color: orange">
+      Bom Paladar <ion-icon name="restaurant-sharp"></ion-icon> 
+    </ion-title>-->
+    <img class="imglogotipo" src="/../../../assets/imagens/logotipo.png"/>     
+  </ion-toolbar> 
+</ion-header>  
+  
+<ion-content [fullscreen]="true" id="main" class="maintag"> 
+  <ion-header collapse="condense">
+    
+    <ion-fab vertical="center" horizontal="end" slot="fixed">
+      <ion-fab-button>
+        <ion-icon name="add"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+    <ion-toolbar>
+      <ion-title size="large">Menu Segundario</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div class="mainwelcome">
+    <img src="/../../../assets/imagens/boasvindas_02.png"/>
+  </div>
+
+  <div id="container" class="maincontainer">
+
+    <ion-card routerLink="/lanche" class="maincard" style="background-color: #115a83;">
+      <ion-icon name="pizza-outline" class="cardicon"></ion-icon>
+      <ion-card-content>
+        Lanche
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card routerLink="/pratos" class="maincard" style="background-color:#f99519;">
+      <ion-icon name="restaurant-outline" class="cardicon cardicon2"></ion-icon>
+      <ion-card-content>
+        Pratos de Entrada & Refeição
+      </ion-card-content>
+    </ion-card> 
+      
+    <ion-card routerLink="/sobremesa" class="maincard" style="background-color:#835a11;">
+      <ion-icon name="ice-cream-outline" class="cardicon"></ion-icon>
+      <ion-card-content>
+        Sobremesa
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card routerLink="/bebidas" class="maincard" style="background-color:brown;">
+      <ion-icon name="beer-outline" class="cardicon"></ion-icon>
+      <ion-card-content>
+        Bebidas
+      </ion-card-content>
+    </ion-card> 
+      
+    <ion-card routerLink="/pratodia" class="maincard" style="background-color: #f1610a;">
+      <ion-icon name="pizza-outline" class="cardicon"></ion-icon>
+      <ion-card-content>
+        Prato do dia
+      </ion-card-content>
+    </ion-card> 
+
+  </div>
+
+</ion-content> 
+
+  <ion-menu side="start" menuId="meuMenu" contentId="main">
+    <ion-header>
+      <ion-toolbar (click)="fecharMenu()" color="danger">
+        <ion-icon style="float: left; width: 40px; height: 40px; padding-left: 12px;" name="chevron-back-outline"></ion-icon>
+        <ion-title class="centro">Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-item lines="none" routerLink="/alert">
+          <ion-icon style="width: 30px; height: 30px; margin-right: 12px;" name="alert-circle-outline"></ion-icon>
+          Meus Cartões </ion-item> 
+        <ion-item lines="none" routerLink="/alert">
+          <ion-icon style="width: 30px; height: 30px; margin-right: 12px;" name="newspaper-outline"></ion-icon>
+          Meus Pedidos </ion-item> 
+          <ion-item lines="none" routerLink="/badge" (click)="fecharMenu()">
+            <ion-icon style="width: 30px; height: 30px; margin-right: 12px;" name="log-out-outline"></ion-icon>
+          Fale Conosco </ion-item>
+          <ion-item lines="none" routerLink="." (click)="fecharMenu()">
+          <ion-icon style="width: 30px; height: 30px; margin-right: 12px;" name="close-outline" ></ion-icon>
+          Fechar  
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  

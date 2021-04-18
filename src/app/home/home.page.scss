@@ -1,0 +1,93 @@
+#container {
+  text-align: center;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  --background: none;
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+.centro{
+  text-align: center;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+
+.maintag {
+  --background: none;
+  background: url("/../../../assets/imagens/fundo.png") no-repeat top center fixed;
+  background-size: 100vw auto;
+  background-position: 0px 120px;
+}
+
+.maincontainer{
+  margin-top: 30vw;
+}
+
+.cardicon2{
+  margin-top: 0px;
+}
+
+.mainwelcome {
+  height: 10px;
+  width: 100%;
+}
+
+@media screen and (max-width:400px) {
+  .cardicon2{
+    margin-top: 10px;
+  }
+}
+
+.maincard {
+  margin: 18px auto;
+  border-radius: 9px;
+
+  width: 80%;
+  height: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+  
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #ffffff;
+  
+  align-items: center;
+  display: flex;
+}
+
+.cardicon {
+  display: flex;
+  float: left;
+  font-size: 45px;
+  size: 45px;
+  color: white;
+  margin-right: -15px;
+  margin-left: -10px;
+}
+
